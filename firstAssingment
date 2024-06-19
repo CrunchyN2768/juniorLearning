@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSpril
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            byte num1 = 23;
+            sbyte num2 = -3;
+            short num3 = -32000;
+            int num4 = 2545;
+            bool b1 = true;
+            bool b2 = false;
+            char ch1 = '!';
+            char ch2 = '#';
+            string str1 = "Hi";
+            string str2 = "Bye";
+            
+        }
+    }
+}
