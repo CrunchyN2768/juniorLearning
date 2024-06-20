@@ -10,24 +10,25 @@ namespace CSpril
     {
         static void Main(string[] args)
         {
-              int hourInMin = 60;
+              int hourInMinutes = 60;
 
-              int patientReceptionTimeInMin = 10;
+              int patientReceptionTimeInMinutes = 10;
 
             Console.WriteLine("Сколько человек в очереди?");
 
               int patientsInLine = Convert.ToInt32(Console.ReadLine());
 
-              int totalReceptionTimeInMin = patientsInLine * patientReceptionTimeInMin;
+              int totalReceptionTimeInMinutes = patientsInLine * patientReceptionTimeInMinutes;
 
-              int finalReceptionTimeInMin = totalReceptionTimeInMin % hourInMin;
+              int finalReceptionTimeInMinutes = totalReceptionTimeInMinutes % hourInMinutes;
 
-              int finalReceptionTimeInHours = totalReceptionTimeInMin / hourInMin;
+              int finalReceptionTimeInHours = totalReceptionTimeInMinutes / hourInMinutes;
 
-            Console.WriteLine($"Вам нужно отстоять {finalReceptionTimeInHours} ч и {finalReceptionTimeInMin} мин");
+            Console.WriteLine($"Вам нужно отстоять {finalReceptionTimeInHours} ч и {finalReceptionTimeInMinutes} мин");
 
             Console.ReadKey();  
 
         }
     }
 }
+
