@@ -10,19 +10,21 @@ namespace CSpril
     {
         static void Main(string[] args)
         {
-              Console.WriteLine("Введите Ваше сообщение:");
+            Console.WriteLine("Введите Ваше сообщение:");
 
-            string message = Console.ReadLine();
+              string message = Console.ReadLine();
 
-              Console.WriteLine("Введите количество повторов:");
+            Console.WriteLine("Введите количество повторов:");
 
-            int repeatAmount = Convert.ToInt32(Console.ReadLine());
+              int repeatAmount = Convert.ToInt32(Console.ReadLine());
 
-              for (int countingTool = 0; countingTool < repeatAmount; countingTool++) 
-              {
+            for (int i = 0; i < repeatAmount; i++)
+            {
                 Console.WriteLine(message);
-              }
-        Console.ReadKey();
+            }
+
+            Console.ReadKey();
         }
     }
 }
+
