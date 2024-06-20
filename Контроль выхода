@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSpril
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string endWord="exit";
+
+            string usersWord="";
+
+        while(usersWord!=endWord)
+            {
+                Console.WriteLine("Введите слово:");
+
+                usersWord = Console.ReadLine(); 
+            }
+
+        Console.WriteLine("Цикл закончен");
+            
+        Console.ReadKey();
+        }
+    }
+}
