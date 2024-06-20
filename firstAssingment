@@ -10,17 +10,16 @@ namespace CSpril
     {
         static void Main(string[] args)
         {
-            byte num1 = 23;
-            sbyte num2 = -3;
-            short num3 = -32000;
-            int num4 = 2545;
-            bool b1 = true;
-            bool b2 = false;
-            char ch1 = '!';
-            char ch2 = '#';
-            string str1 = "Hi";
-            string str2 = "Bye";
-            
+            byte health = 23;
+            sbyte damage = -3;
+            short remainingDebt = -32000;
+            int coins = 2545;
+            bool isHungry = true;
+            bool isThirsty = false;
+            char percent = '%';
+            char currency = '$';
+            string greeting = "Hi,player!";
+            string farewell = "Bye,player!";
         }
     }
 }
