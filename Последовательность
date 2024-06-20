@@ -10,16 +10,13 @@ namespace CSpril
     {
         static void Main(string[] args)
         {
-            int number = 5;
+            int step = 7;
 
-            Console.WriteLine("Введите максимально возможное число:");
+            int maximumNumber = 103;
 
-            int maximumNumber = Convert.ToInt32(Console.ReadLine());
-
-            while (number <= maximumNumber) 
+            for (int number = 5;number<=maximumNumber; number += step)
             {
                 Console.WriteLine(number);
-                number += 7;
             }
 
             Console.ReadKey();
