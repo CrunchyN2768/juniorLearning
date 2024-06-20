@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSpril
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string nameArea = "Иванов";
+            string surnameArea = "Иван";
+            Console.WriteLine($"Что-то перепутано!Ваше имя:{nameArea},Ваша фамилия:{surnameArea}");
+            string emptyArea = nameArea;
+            nameArea = surnameArea;
+            surnameArea = emptyArea;
+            Console.WriteLine($"Исправлено!Ваше имя:{nameArea},Ваша фамилия:{surnameArea}");
+
+            string coffeeCup = "Чай";
+            string teaCup = "Кофе";
+            Console.WriteLine($"Напитки не в тех чашках!В чашке для кофе:{coffeeCup},а в чашке для чая:{teaCup}");
+            string emptyCup = teaCup;
+            teaCup = coffeeCup;
+            coffeeCup = emptyCup;
+            Console.WriteLine($"Теперь верно!В чашке для кофе:{coffeeCup},а в чашке для чая:{teaCup}");
+            Console.ReadKey();
+            
+
+
+        }
+    }
+}
