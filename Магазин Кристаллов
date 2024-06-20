@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSpril
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+         Console.WriteLine("Сколько у Вас золота?");
+
+            int gold = Convert.ToInt32(Console.ReadLine());
+
+            int crystalPrice = 5;
+
+         Console.WriteLine($"У Вас {gold} золота,один кристалл стоит {crystalPrice}.\nСколько Вы хотите купить?");
+
+            int сrystalAmount = Convert.ToInt32(Console.ReadLine());
+            
+            gold -= сrystalAmount * crystalPrice;
+
+         Console.WriteLine($"У Вас осталось {gold} золота и теперь есть кристаллы в количестве {сrystalAmount}");
+
+            Console.ReadKey();  
+        }
+    }
+}
