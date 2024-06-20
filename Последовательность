@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSpril
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int number = 5;
+
+            Console.WriteLine("Введите максимально возможное число:");
+
+            int maximumNumber = Convert.ToInt32(Console.ReadLine());
+
+            while (number <= maximumNumber) 
+            {
+                Console.WriteLine(number);
+                number += 7;
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
