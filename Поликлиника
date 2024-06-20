@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSpril
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+              int hourInMin = 60;
+
+              int patientReceptionTimeInMin = 10;
+
+            Console.WriteLine("Сколько человек в очереди?");
+
+              int patientsInLine = Convert.ToInt32(Console.ReadLine());
+
+              int totalReceptionTimeInMin = patientsInLine * patientReceptionTimeInMin;
+
+              int finalReceptionTimeInMin = totalReceptionTimeInMin % hourInMin;
+
+              int finalReceptionTimeInHours = totalReceptionTimeInMin / hourInMin;
+
+            Console.WriteLine($"Вам нужно отстоять {finalReceptionTimeInHours} ч и {finalReceptionTimeInMin} мин");
+
+            Console.ReadKey();  
+
+        }
+    }
+}
