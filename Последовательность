@@ -14,9 +14,11 @@ namespace CSpril
 
             int maximumNumber = 103;
 
-            for (int number = 5;number<=maximumNumber; number += step)
+            int number = 5;
+
+            for (int i = number; i <= maximumNumber; i += step)
             {
-                Console.WriteLine(number);
+                Console.WriteLine(i);
             }
 
             Console.ReadKey();
