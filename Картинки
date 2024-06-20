@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSpril
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int numOfPics = 52;
+            int maxNumOfPicsInLine = 3;
+            int numOfFilledLines = numOfPics / maxNumOfPicsInLine;
+            int numOfLeftPics = numOfPics % maxNumOfPicsInLine; 
+            Console.WriteLine($"Пользователь!Заполненных рядов с картинками {numOfFilledLines},а не вместилось картинок: {numOfLeftPics}");
+            Console.ReadKey();
+        }
+    }
+}
