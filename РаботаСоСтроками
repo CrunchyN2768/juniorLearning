@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSpril
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string greeting = "Привет,Человек!";
+            string nameOfHumanRequest = "Как же тебя зовут?";
+            string ageOfHumanRequest = "Введи возраст:";
+            string nameOfFriendRequest = "Как зовут твоего друга?";
+            Console.WriteLine(greeting);  
+            Console.WriteLine(nameOfHumanRequest);  
+            string nameOfHuman = Console.ReadLine();
+            Console.WriteLine(ageOfHumanRequest);
+            string ageOfHuman = Console.ReadLine();
+            Console.WriteLine(nameOfFriendRequest); 
+            string nameOfFriend = Console.ReadLine();
+            Console.WriteLine($"Тебя зовут {nameOfHuman}, тебе {ageOfHuman},и ты дружишь с человеком по имени {nameOfFriend}.Отлично!");
+            Console.ReadKey(); 
+        }
+    }
+}
