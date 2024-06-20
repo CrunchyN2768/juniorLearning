@@ -10,11 +10,11 @@ namespace CSpril
     {
         static void Main(string[] args)
         {
-            int numOfPics = 52;
-            int maxNumOfPicsInLine = 3;
-            int numOfFilledLines = numOfPics / maxNumOfPicsInLine;
-            int numOfLeftPics = numOfPics % maxNumOfPicsInLine; 
-            Console.WriteLine($"Пользователь!Заполненных рядов с картинками {numOfFilledLines},а не вместилось картинок: {numOfLeftPics}");
+            int picturesAmount = 52;
+            int maxPicturesInLineAmount = 3;
+            int filledPicturesLinesAmount = picturesAmount / maxPicturesInLineAmount;
+            int leftPicturesAmount = picturesAmount % maxPicturesInLineAmount;
+            Console.WriteLine($"Пользователь!Заполненных рядов с картинками {filledPicturesLinesAmount},а не вместилось картинок: {leftPicturesAmount}");
             Console.ReadKey();
         }
     }
