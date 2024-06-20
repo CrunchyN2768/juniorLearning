@@ -34,7 +34,7 @@ namespace CSpril
                 }
             }
 
-            Console.WriteLine($"Сумма всех чисел до числа {number},которые делятся на 3 или 5,равна {sum}");
+            Console.WriteLine($"Сумма всех чисел до числа {number},которые делятся на {firstDivider} или {secondDivider},равна {sum}");
 
             Console.ReadKey();
         }
