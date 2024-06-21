@@ -1,0 +1,88 @@
+using System;
+using System.Collections.Generic;
+using System.Data.SqlTypes;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Net;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSpril
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        { 
+            const string CommandGreeting = "1";
+            const string CommandCompliment = "2";
+            const string CommandrandomNumber = "3";
+            const string CommandClear = "4";
+            const string CommandExit = "5";
+
+            string greeting = "\nПривет!\n";
+
+            string compliment = "\nТы замечательный!\n";
+
+            Random random = new Random();
+            int randomNumber = random.Next(0, 100000);
+
+            bool isWork = true;
+
+            while (isWork)
+            {
+                Console.WriteLine($"Введите номер команды:\n {CommandGreeting} Поприветствовать\n " +
+               $"{CommandCompliment} Сделать комплимент\n " +
+               $"{CommandrandomNumber} Выдать случайное число\n " +
+               $"{CommandClear} Очистить консоль\n " +
+               $"{CommandExit} Выйти из программы\n");
+                
+                string userCommand = Console.ReadLine();
+
+                switch (userCommand)
+                {
+                    case CommandGreeting:
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.WriteLine(greeting);
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        break;
+
+                    case CommandCompliment:
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.BackgroundColor = ConsoleColor.Green;
+                        Console.WriteLine(compliment);
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        break;
+
+                    case CommandrandomNumber:
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        Console.WriteLine($"\n{randomNumber}\n");
+                        break;  
+                        
+                    case CommandClear:
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        Console.Clear();
+                        Console.SetCursorPosition(0, 0);
+                        break;
+
+                    case CommandExit:
+                        isWork = false;
+                        break;
+
+                    default:
+                        Console.WriteLine("Такой команды нет");    
+                        break;
+                }
+            }
+
+            Console.WriteLine("\nВы вышли из программы!\n");
+
+            Console.ReadKey();
+        }
+    }
+}
